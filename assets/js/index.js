@@ -96,18 +96,18 @@
 
 //-----------Desestructuracion de parametros.. 
 
-const saludar = (alumno) =>{
-    console.log(alumno)
-    console.log(`Hola ${alumno.apellido}`)
-}
+// const saludar = (alumno) =>{
+//     console.log(alumno)
+//     console.log(`Hola ${alumno.apellido}`)
+// }
 
-saludar({nombre: "Erick", apellido: "Godoy"})
-//------------------
+// saludar({nombre: "Erick", apellido: "Godoy"})
+// //------------------
 
 
 
-const saludarDesestructuracion = ({apellido}) =>{
-    console.log(`Hola ${apellido}`)
-}
+// const saludarDesestructuracion = ({apellido}) =>{
+//     console.log(`Hola ${apellido}`)
+// }
 
-saludarDesestructuracion({nombre: "Erick", apellido: "Godoy"})
+// saludarDesestructuracion({nombre: "Erick", apellido: "Godoy"})
