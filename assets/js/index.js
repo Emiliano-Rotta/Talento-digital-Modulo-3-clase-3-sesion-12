@@ -64,19 +64,34 @@
 
 ///----------parametros en funcion flecha
 //area de un cuadrado es lado*lado || lado(por)lado
-const areaCuadrado = (lado) =>{
-    return lado*lado
+// const areaCuadrado = (lado) =>{
+//     return lado*lado
+// }
+
+// console.log(areaCuadrado(5))
+// //-----------------
+// const areaCuadradoOtra = (lado) => lado * lado
+
+// console.log(areaCuadradoOtra(4))
+// //----------------- si recibe un solo arametro se puede sacar el parentesis
+// const areaCuadradoOtraOpcion = x => x * x
+
+// console.log(areaCuadradoOtraOpcion(3))
+
+
+// ------------------Parametros rest
+//ciclo iteracion
+
+
+//(alumno,...letras, profesor)
+//(alumno, profesor, ...letras)
+ 
+ 
+const letras = (alumno, profesor, ...letras) => {
+    let suma = ""
+    for (let i = 0; i < letras.length; i++) {
+        suma = suma + (letras[i] + ", ")
+    }
+    console.log(`El alumno ${alumno} tuvo las siguientes calificaciones: ${suma}, su profesor es: ${profesor}`)
 }
-
-console.log(areaCuadrado(5))
-//-----------------
-const areaCuadradoOtra = (lado) => lado * lado
-
-console.log(areaCuadradoOtra(4))
-//----------------- si recibe un solo arametro se puede sacar el parentesis
-const areaCuadradoOtraOpcion = x => x * x
-
-console.log(areaCuadradoOtraOpcion(3))
-
-
-// ------------------------------
+letras("Emiliano","Carlos","a","b","c","d","f")
