@@ -102,11 +102,12 @@ const saludar = (alumno) =>{
 }
 
 saludar({nombre: "Erick", apellido: "Godoy"})
+//------------------
+
+
 
 const saludarDesestructuracion = ({apellido}) =>{
-
     console.log(`Hola ${apellido}`)
 }
 
 saludarDesestructuracion({nombre: "Erick", apellido: "Godoy"})
-
