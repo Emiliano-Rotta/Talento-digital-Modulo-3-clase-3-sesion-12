@@ -87,11 +87,11 @@
 //(alumno, profesor, ...letras)
  
  
-const letras = (alumno, profesor, ...letras) => {
-    let suma = ""
-    for (let i = 0; i < letras.length; i++) {
-        suma = suma + (letras[i] + ", ")
-    }
-    console.log(`El alumno ${alumno} tuvo las siguientes calificaciones: ${suma}, su profesor es: ${profesor}`)
-}
-letras("Emiliano","Carlos","a","b","c","d","f")
+// const letras = (alumno, profesor, ...letras) => {
+//     let suma = ""
+//     for (let i = 0; i < letras.length; i++) {
+//         suma = suma + (letras[i] + ", ")
+//     }
+//     console.log(`El alumno ${alumno} tuvo las siguientes calificaciones: ${suma}, su profesor es: ${profesor}`)
+// }
+// letras("Emiliano","Carlos","a","b","c","d","f")
