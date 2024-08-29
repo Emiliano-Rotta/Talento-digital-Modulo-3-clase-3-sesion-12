@@ -83,10 +83,7 @@
 //ciclo iteracion
 
 
-//(alumno,...letras, profesor)
-//(alumno, profesor, ...letras)
- 
- 
+
 // const letras = (alumno, profesor, ...letras) => {
 //     let suma = ""
 //     for (let i = 0; i < letras.length; i++) {
@@ -95,3 +92,21 @@
 //     console.log(`El alumno ${alumno} tuvo las siguientes calificaciones: ${suma}, su profesor es: ${profesor}`)
 // }
 // letras("Emiliano","Carlos","a","b","c","d","f")
+
+
+//-----------Desestructuracion de parametros.. 
+
+const saludar = (alumno) =>{
+    console.log(alumno)
+    console.log(`Hola ${alumno.apellido}`)
+}
+
+saludar({nombre: "Erick", apellido: "Godoy"})
+
+const saludarDesestructuracion = ({apellido}) =>{
+
+    console.log(`Hola ${apellido}`)
+}
+
+saludarDesestructuracion({nombre: "Erick", apellido: "Godoy"})
+
